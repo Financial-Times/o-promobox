@@ -10,7 +10,5 @@ $o-promobox-class-type: unquote("%");
   @include oFontsInclude(BentonSans);
 }
 
-#{$o-promobox-class-type}o-promobox {
-  background-color: _oColorsGetPaletteColor(pink-tint2);
-  font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
-}
+@import "src/base";
+@import "src/standard";
