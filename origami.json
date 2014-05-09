@@ -1,0 +1,10 @@
+{
+  "description": "Styling for boxes that promote the contents of themselves",
+  "origamiType": "module",
+  "origamiVersion": 1,
+  "support": "matthew.andrews@ft.com",
+  "supportStatus": "not implemented",
+  "demos": [
+    "/demos/basic.html"
+  ]
+}

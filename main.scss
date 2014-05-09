@@ -1,0 +1,16 @@
+$o-promobox-is-silent: true !default;
+
+@import "o-colors/main";
+@import "o-fonts/main";
+
+$o-promobox-class-type: unquote("%");
+
+@if $o-promobox-is-silent == false {
+  $o-promobox-class-type: unquote(".");
+  @include oFontsInclude(BentonSans);
+}
+
+#{$o-promobox-class-type}o-promobox {
+  background-color: _oColorsGetPaletteColor(pink-tint2);
+  font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
+}
