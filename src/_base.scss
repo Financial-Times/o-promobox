@@ -1,3 +1,46 @@
+// At twice the size of the maximum width of the image
+// that appears on promoboxes (yes, I know :()
+$o-promobox-width: 167px;
+$o-promobox-breakpoint: 3*$o-promobox-width;
+
+@mixin o-promobox--skinny {
+  width: $o-promobox-width;
+
+  #{$o-promobox-class-type}o-promobox__image {
+    padding: 0 0 14px 0;
+    margin: 0;
+  }
+}
+
+
 #{$o-promobox-class-type}o-promobox {
-  // TODO: Add generic structure styling here
+  width: 100%;
+  padding-top: 14px;
+
+  #{$o-promobox-class-type}o-promobox__title {
+    padding: 0 7px 14px 7px;
+    margin: 0;
+  }
+
+  p {
+    padding: 0 7px 14px 7px;
+    margin: 0;
+  }
+
+  #{$o-promobox-class-type}o-promobox__image {
+    float: left;
+    padding: 0 28px 14px 7px;
+  }
+
+  &.o-promobox--skinny {
+    @include o-promobox--skinny;
+  }
+
+  &.o-promobox--responsive {
+  
+    @media (min-width: $o-promobox-breakpoint) {
+      @include o-promobox--skinny;
+    }
+  }
+
 }
