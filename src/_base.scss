@@ -48,7 +48,7 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
   }
 }
 
-#{$o-promobox-class-type}o-promobox__title {
+#{$o-promobox-class-type}o-promobox {
   &.o-promobox--skinny {
     @include o-promobox--skinny;
   }
