@@ -16,8 +16,6 @@ Add the `o-promobox` class to the element you wish to apply the styling.  Typica
 </div>
 ```
 
-```
-
 Note: it is up to the product developer to decide how to 'flow' other content around the promobox.  They might choose to `float: left;` the promobox or `display: inline` it - or the product developer may decide to display it full width.
 
 ## Themeable
