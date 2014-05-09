@@ -1,5 +1,8 @@
+/**
+ * Standard theme
+ */
+
 #{$o-promobox-class-type}o-promobox--standard {
-  padding-top: 14px;
   border-top: 3px solid _oColorsGetPaletteColor(pink-tint4);
   background-color: _oColorsGetPaletteColor(pink-tint2);
   font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
@@ -7,8 +10,6 @@
   #{$o-promobox-class-type}o-promobox__title {
     line-height: 21px;
     font-size: 16px; 
-    padding: 0 7px 14px 7px;
-    margin: 0;
   }
 
   p {
@@ -16,6 +17,3 @@
     line-height: 21px;
   }
 }
-
-
-
