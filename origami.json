@@ -3,5 +3,12 @@
   "origamiType": "module",
   "origamiVersion": 1,
   "support": "matthew.andrews@ft.com",
-  "supportStatus": "not implemented"
+  "supportStatus": "not implemented",
+  "demos": [
+    "/demos/base.html",
+    "/demos/responsive.html",
+    "/demos/standard.html",
+    "/demos/standard-skinny.html",
+    "/demos/standard-responsive.html"
+  ]
 }
