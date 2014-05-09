@@ -42,8 +42,16 @@ To be able to [customise the breakpoints](http://build.origami.ft.com/files/o-pr
 @import "o-promobox";
 
 @media (max-width: 300px) {
-  .o-promobox{
+  .custom-responsive-thing {
     @include o-promobox--skinny;
   }
 }
+```
+
+```html
+<div class="o-promobox custom-responsive-thing">
+  <h3 class="o-promobox__title">My Promobox</h3>
+  <img src="//my-image.png" />
+  <p>My paragraph</p>
+</div>
 ```
