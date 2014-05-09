@@ -20,7 +20,7 @@ Note: it is up to the product developer to decide how to 'flow' other content ar
 
 ## Themeable
 
-Either extend the base classes to create a custom theme or use the [standard theme](http://build.origami.ft.com/files/o-promobox@0.0.6/demos/standard.html).
+Either extend the base classes to create a custom theme or use the [standard theme](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard.html).
 
 
 ```html
@@ -31,11 +31,11 @@ Either extend the base classes to create a custom theme or use the [standard the
 
 ## Responsive
 
-The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox@0.0.6/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox@0.0.6/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
+The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
 
 To enable responsivity either add the `o-promobox--responsive` class.
 
-To be able to customise the breakpoints, follow the example below:-
+To be able to [customise the breakpoints](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/custom-responsive.html), follow the example below:-
 
 ```scss
 @o-promobox-is-silent: false;
