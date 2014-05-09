@@ -17,6 +17,9 @@
     },
     "standard-responsive": {
       "template": "demos/src/standard-responsive.mustache"
+    },
+    "custom-responsive": {
+      "template": "demos/src/custom-responsive.mustache"
     }
   }
 }

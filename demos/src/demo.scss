@@ -1,2 +1,8 @@
 $o-promobox-is-silent: false;
 @import "./../../main";
+
+@media (max-width: 500px) {
+  .custom-responsivity {
+    @include o-promobox--skinny;
+  }
+}
