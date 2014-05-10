@@ -33,15 +33,13 @@ Either extend the base classes to create a custom theme or use the [standard the
 
 The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
 
-To enable responsivity either add the `o-promobox--responsive` class.
-
-To be able to [customise the breakpoints](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/custom-responsive.html), follow the example below:-
+To [enable responsivity](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/custom-responsive.html), follow the example below:-
 
 ```scss
 @o-promobox-is-silent: false;
 @import "o-promobox";
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .custom-responsive-thing {
     @include o-promobox--skinny;
   }

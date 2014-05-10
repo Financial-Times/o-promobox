@@ -6,10 +6,9 @@
   "supportStatus": "not implemented",
   "demos": [
     "/demos/base.html",
-    "/demos/responsive.html",
+    "/demos/skinny.html",
     "/demos/standard.html",
     "/demos/standard-skinny.html",
-    "/demos/standard-responsive.html",
     "/demos/custom-responsive.html"
   ]
 }
