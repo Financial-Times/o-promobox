@@ -16,6 +16,7 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
 #{$o-promobox-class-type}o-promobox {
   width: 100%;
   padding-top: 14px;
+  overflow: hidden;
 
   p {
     padding: 0 7px 14px 7px;
