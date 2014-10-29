@@ -6,8 +6,8 @@ $o-promobox-is-silent: true !default;
 $o-promobox-class-type: unquote("%");
 
 @if $o-promobox-is-silent == false {
-  $o-promobox-class-type: unquote(".");
-  @include oFontsInclude(BentonSans);
+	$o-promobox-class-type: unquote(".");
+	@include oFontsInclude(BentonSans);
 }
 
 @import "src/base";
