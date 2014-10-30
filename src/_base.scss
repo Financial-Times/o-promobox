@@ -14,25 +14,25 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
  */
 
 #{$o-promobox-class-type}o-promobox {
-  width: 100%;
-  padding-top: 14px;
-  overflow: hidden;
+	width: 100%;
+	padding-top: 14px;
+	overflow: hidden;
 
-  p {
-    padding: 0 7px 14px 7px;
-    margin: 0;
-  }
+	p {
+		padding: 0 7px 14px;
+		margin: 0;
+	}
 
 }
 
 #{$o-promobox-class-type}o-promobox__title {
-  padding: 0 7px 14px 7px;
-  margin: 0;
+	padding: 0 7px 14px;
+	margin: 0;
 }
 
 #{$o-promobox-class-type}o-promobox__image {
-  float: left;
-  padding: 0 28px 14px 7px;
+	float: left;
+	padding: 0 28px 14px 7px;
 }
 
 
@@ -41,16 +41,16 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
  */
 
 @mixin o-promobox--skinny {
-  width: $o-promobox-width;
+	width: $o-promobox-width;
 
-  #{$o-promobox-class-type}o-promobox__image {
-    padding: 0 0 14px 0;
-    margin: 0;
-  }
+	#{$o-promobox-class-type}o-promobox__image {
+		padding: 0 0 14px;
+		margin: 0;
+	}
 }
 
 #{$o-promobox-class-type}o-promobox {
-  &.o-promobox--skinny {
-    @include o-promobox--skinny;
-  }
+	&.o-promobox--skinny {
+		@include o-promobox--skinny;
+	}
 }

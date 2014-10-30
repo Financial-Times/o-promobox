@@ -2,7 +2,7 @@ $o-promobox-is-silent: false;
 @import "./../../main";
 
 @media (min-width: 500px) {
-  .custom-responsivity {
-    @include o-promobox--skinny;
-  }
+	.custom-responsivity {
+		@include o-promobox--skinny;
+	}
 }
