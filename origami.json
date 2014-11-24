@@ -1,14 +1,14 @@
 {
-  "description": "Styling for boxes that promote the contents of themselves",
-  "origamiType": "module",
-  "origamiVersion": 1,
-  "support": "matthew.andrews@ft.com",
-  "supportStatus": "experimental",
-  "demos": [
-    "/demos/base.html",
-    "/demos/skinny.html",
-    "/demos/standard.html",
-    "/demos/standard-skinny.html",
-    "/demos/custom-responsive.html"
-  ]
+	"description": "Styling for boxes that promote the contents of themselves",
+	"origamiType": "module",
+	"origamiVersion": 1,
+	"support": "matthew.andrews@ft.com",
+	"supportStatus": "experimental",
+	"demos": [
+		"/demos/base.html",
+		"/demos/skinny.html",
+		"/demos/standard.html",
+		"/demos/standard-skinny.html",
+		"/demos/custom-responsive.html"
+	]
 }
