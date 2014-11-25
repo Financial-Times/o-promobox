@@ -3,10 +3,10 @@ $o-promobox-is-silent: true !default;
 @import "o-colors/main";
 @import "o-fonts/main";
 
-$o-promobox-class-type: unquote("%");
+$o-promobox-class-type: unquote("%") !default;
 
 @if $o-promobox-is-silent == false {
-	$o-promobox-class-type: unquote(".");
+	$o-promobox-class-type: unquote(".") !global;
 	@include oFontsInclude(BentonSans);
 }
 
