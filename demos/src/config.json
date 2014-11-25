@@ -1,22 +1,22 @@
 {
-  "options": {
-    "sass": "demos/src/demo.scss"
-  },
-  "demos": {
-    "base": {
-      "template": "demos/src/base.mustache"
-    },
-    "skinny": {
-      "template": "demos/src/skinny.mustache"
-    },
-    "standard": {
-      "template": "demos/src/standard.mustache"
-    },
-    "standard-skinny": {
-      "template": "demos/src/standard-skinny.mustache"
-    },
-    "custom-responsive": {
-      "template": "demos/src/custom-responsive.mustache"
-    }
-  }
+	"options": {
+		"sass": "demos/src/demo.scss"
+	},
+	"demos": {
+		"base": {
+			"template": "demos/src/base.mustache"
+		},
+		"skinny": {
+			"template": "demos/src/skinny.mustache"
+		},
+		"standard": {
+			"template": "demos/src/standard.mustache"
+		},
+		"standard-skinny": {
+			"template": "demos/src/standard-skinny.mustache"
+		},
+		"custom-responsive": {
+			"template": "demos/src/custom-responsive.mustache"
+		}
+	}
 }

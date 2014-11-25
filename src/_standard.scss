@@ -3,8 +3,8 @@
  */
 
 #{$o-promobox-class-type}o-promobox--standard {
-	border-top: 3px solid _oColorsGetPaletteColor(pink-tint4);
-	background-color: _oColorsGetPaletteColor(pink-tint2);
+	border-top: 3px solid oColorsGetPaletteColor(pink-tint4);
+	background-color: oColorsGetPaletteColor(pink-tint2);
 	font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
 
 	#{$o-promobox-class-type}o-promobox__title {

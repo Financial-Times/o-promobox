@@ -10,9 +10,9 @@ Add the `o-promobox` class to the element you wish to apply the styling.  Typica
 
 ```html
 <div class="o-promobox">
-  <h3 class="o-promobox__title">My Promobox</h3>
-  <img src="//my-image.png" />
-  <p>My paragraph</p>
+	<h3 class="o-promobox__title">My Promobox</h3>
+	<img src="//my-image.png" alt="" />
+	<p>My paragraph</p>
 </div>
 ```
 
@@ -25,7 +25,7 @@ Either extend the base classes to create a custom theme or use the [standard the
 
 ```html
 <div class="o-promobox o-promobox--standard">
-  ...
+	…
 </div>
 ```
 
@@ -40,16 +40,16 @@ To [enable responsivity](http://build.origami.ft.com/files/o-promobox@0.0.7/demo
 @import "o-promobox";
 
 @media (min-width: 300px) {
-  .custom-responsive-thing {
-    @include o-promobox--skinny;
-  }
+	.custom-responsive-thing {
+		@include o-promobox--skinny;
+	}
 }
 ```
 
 ```html
 <div class="o-promobox custom-responsive-thing">
-  <h3 class="o-promobox__title">My Promobox</h3>
-  <img src="//my-image.png" />
-  <p>My paragraph</p>
+	<h3 class="o-promobox__title">My Promobox</h3>
+	<img src="//my-image.png" alt="" />
+	<p>My paragraph</p>
 </div>
 ```
