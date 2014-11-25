@@ -1,38 +1,19 @@
-/**
- * Component settings
- *
- * At twice the size of the maximum width of the image
- * that appears on promoboxes (yes, I know :()
- */
-
-$o-promobox-width: 167px;
-$o-promobox-breakpoint: 3*$o-promobox-width;
-
 
 /**
  * Base styling
  */
 
 #{$o-promobox-class-type}o-promobox {
-	width: 100%;
-	padding-top: 14px;
-	overflow: hidden;
-
-	p {
-		padding: 0 7px 14px;
-		margin: 0;
-	}
+	@include oPromobox;
 
 }
 
 #{$o-promobox-class-type}o-promobox__title {
-	padding: 0 7px 14px;
-	margin: 0;
+	@include oPromoboxTitle;
 }
 
 #{$o-promobox-class-type}o-promobox__image {
-	float: left;
-	padding: 0 28px 14px 7px;
+	@include oPromoboxImage;
 }
 
 
@@ -40,17 +21,6 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
  * Define the responsivity
  */
 
-@mixin o-promobox--skinny {
-	width: $o-promobox-width;
-
-	#{$o-promobox-class-type}o-promobox__image {
-		padding: 0 0 14px;
-		margin: 0;
-	}
-}
-
 #{$o-promobox-class-type}o-promobox {
-	&.o-promobox--skinny {
-		@include o-promobox--skinny;
-	}
+	@include oPromoboxSkinny;
 }
