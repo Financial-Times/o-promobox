@@ -10,5 +10,9 @@ $o-promobox-class-type: unquote("%");
 	@include oFontsInclude(BentonSans);
 }
 
+@import "src/variables";
 @import "src/base";
 @import "src/standard";
+
+@import "src/deprecated/base";
+@import "src/deprecated/standard";

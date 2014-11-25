@@ -4,3 +4,5 @@
 .ruby-version
 /demos/demo.css
 /demos/demo.css.map
+/.idea
+.editorconfig

@@ -1,0 +1,9 @@
+/**
+ * Component settings
+ *
+ * At twice the size of the maximum width of the image
+ * that appears on promoboxes (yes, I know :()
+ */
+
+$o-promobox-width: 167px;
+$o-promobox-breakpoint: 3*$o-promobox-width;
