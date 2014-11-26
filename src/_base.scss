@@ -5,7 +5,7 @@
 
 /**
  * Promobox container styling
- * @param {boolean} $skinny (false) - if set to to true this sets a fixed (narrow) width to the container
+ * @param {boolean} $skinny (false) - if set to to true this sets a fixed, narrow width to the container
  */
 @mixin oPromobox($skinny : false) {
 	width: 100%;
