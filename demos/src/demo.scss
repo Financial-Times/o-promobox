@@ -3,6 +3,6 @@ $o-promobox-is-silent: false;
 
 @media (min-width: 500px) {
 	.custom-responsivity {
-		@include oPromoboxSkinny;
+		@include oPromobox($skinny:true);
 	}
 }
