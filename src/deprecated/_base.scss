@@ -3,11 +3,6 @@
  * Base styling
  */
 
-#{$o-promobox-class-type}o-promobox {
-	@include oPromobox;
-
-}
-
 #{$o-promobox-class-type}o-promobox__title {
 	@include oPromoboxTitle;
 }
@@ -16,11 +11,16 @@
 	@include oPromoboxImage;
 }
 
+#{$o-promobox-class-type}o-promobox {
+	@include oPromobox;
+}
+
+
 
 /**
- * Define the responsivity
+ * Skinny mode
  */
 
 #{$o-promobox-class-type}o-promobox--skinny {
-	@include oPromobox($skinny:true);
+	@include oPromobox($skinny: true);
 }

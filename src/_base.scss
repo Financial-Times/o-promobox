@@ -5,10 +5,13 @@
 
 /**
  * Promobox container styling
- * @param {boolean} $skinny (false) - if set to to true this sets a fixed, narrow width to the container
+ *
+ * @param {boolean} $skinny (false) - force promobox to have a fixed, narrow width
+ * @param {boolean} $skinny-width ($o-promobox-skinny-width) - with of the skinny promobox
+ *
+ * @requires {variable} $o-promobox-skinny-width
  */
-@mixin oPromobox($skinny : false) {
-	width: 100%;
+@mixin oPromobox($skinny: false, $skinny-width: $o-promobox-skinny-width) {
 	padding-top: 14px;
 	overflow: hidden;
 
@@ -18,17 +21,19 @@
 	}
 
 	@if $skinny {
-		width: $o-promobox-width;
+		width: $skinny-width;
 
 		.o-promobox__image {
 			padding: 0 0 14px;
 			margin: 0;
 		}
+	} @else {
+		width: 100%;
 	}
 }
 
 /**
- * Apply to promobox title
+ * Promobox title structure
  */
 @mixin oPromoboxTitle {
 	padding: 0 7px 14px;
@@ -36,30 +41,27 @@
 }
 
 /**
- * Apply to promobox image
+ * Promobox image structure
  */
 @mixin oPromoboxImage {
 	float: left;
 	padding: 0 28px 14px 7px;
 }
 
+@if $o-promobox-is-silent == false {
+	.o-promobox__title {
+		@include oPromoboxTitle;
+	}
 
-// uncomment the below when the deprecated placeholder stuff is removed
-/*
-.o-promobox {
-	@include oPromobox;
+	.o-promobox__image {
+		@include oPromoboxImage;
+	}
+
+	.o-promobox {
+		@include oPromobox;
+	}
+
+	.o-promobox--skinny {
+		@include oPromobox($skinny: true);
+	}
 }
-
-.o-promobox__title {
-	@include oPromoboxTitle;
-}
-
-.o-promobox__image {
-	@include oPromoboxImage;
-}
-
-
-.o-promobox--skinny {
-	@include oPromobox($skinny:true);
-}
-*/

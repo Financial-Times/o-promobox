@@ -5,6 +5,8 @@
 
 /**
  * Standard theme
+ *
+ * @requires {function} oColorsGetPaletteColor
  */
 @mixin oPromoboxStandard {
 	border-top: 3px solid oColorsGetPaletteColor(pink-tint4);
@@ -22,9 +24,8 @@
 	}
 }
 
-// uncomment when deprecated stuff removed
-/*
-.o-promobox--standard {
-	@include oPromoboxStandard;
+@if $o-promobox-is-silent == false {
+	.o-promobox--standard {
+		@include oPromoboxStandard;
+	}
 }
-*/
