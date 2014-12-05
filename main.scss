@@ -14,5 +14,6 @@ $o-promobox-class-type: unquote("%") !default;
 @import "src/base";
 @import "src/standard";
 
+@import "src/deprecated/variables";
 @import "src/deprecated/base";
 @import "src/deprecated/standard";
