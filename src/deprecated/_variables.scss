@@ -1,0 +1,10 @@
+@if (variable-exists($o-promobox-width)) {
+	@warn "$o-promobox-width is now deprecated and will be removed in next major release";
+}
+
+@if (variable-exists($o-promobox-breakpoint)) {
+	@warn "$o-promobox-breakpoint is now deprecated and will be removed in next major release";
+}
+
+$o-promobox-width: $o-promobox-skinny-width !default;
+$o-promobox-breakpoint: 3 * $o-promobox-skinny-width !default;

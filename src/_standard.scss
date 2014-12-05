@@ -1,13 +1,19 @@
 /**
- * Standard theme
- */
+ * @group o-promobox
+ * @link http://registry.origami.ft.com/components/o-promobox
+**/
 
-#{$o-promobox-class-type}o-promobox--standard {
+/**
+ * Standard theme
+ *
+ * @requires {function} oColorsGetPaletteColor
+ */
+@mixin oPromoboxStandard {
 	border-top: 3px solid oColorsGetPaletteColor(pink-tint4);
 	background-color: oColorsGetPaletteColor(pink-tint2);
 	font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
 
-	#{$o-promobox-class-type}o-promobox__title {
+	.o-promobox__title {
 		line-height: 21px;
 		font-size: 16px;
 	}
@@ -15,5 +21,11 @@
 	p {
 		font-size: 14px;
 		line-height: 21px;
+	}
+}
+
+@if $o-promobox-is-silent == false {
+	.o-promobox--standard {
+		@include oPromoboxStandard;
 	}
 }

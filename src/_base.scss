@@ -1,20 +1,17 @@
 /**
- * Component settings
- *
- * At twice the size of the maximum width of the image
- * that appears on promoboxes (yes, I know :()
- */
-
-$o-promobox-width: 167px;
-$o-promobox-breakpoint: 3*$o-promobox-width;
-
+ * @group o-promobox
+ * @link http://registry.origami.ft.com/components/o-promobox
+**/
 
 /**
- * Base styling
+ * Promobox container styling
+ *
+ * @param {boolean} $skinny (false) - force promobox to have a fixed, narrow width
+ * @param {boolean} $skinny-width ($o-promobox-skinny-width) - with of the skinny promobox
+ *
+ * @requires {variable} $o-promobox-skinny-width
  */
-
-#{$o-promobox-class-type}o-promobox {
-	width: 100%;
+@mixin oPromobox($skinny: false, $skinny-width: $o-promobox-skinny-width) {
 	padding-top: 14px;
 	overflow: hidden;
 
@@ -23,34 +20,48 @@ $o-promobox-breakpoint: 3*$o-promobox-width;
 		margin: 0;
 	}
 
+	@if $skinny {
+		width: $skinny-width;
+
+		.o-promobox__image {
+			padding: 0 0 14px;
+			margin: 0;
+		}
+	} @else {
+		width: 100%;
+	}
 }
 
-#{$o-promobox-class-type}o-promobox__title {
+/**
+ * Promobox title structure
+ */
+@mixin oPromoboxTitle {
 	padding: 0 7px 14px;
 	margin: 0;
 }
 
-#{$o-promobox-class-type}o-promobox__image {
+/**
+ * Promobox image structure
+ */
+@mixin oPromoboxImage {
 	float: left;
 	padding: 0 28px 14px 7px;
 }
 
-
-/**
- * Define the responsivity
- */
-
-@mixin o-promobox--skinny {
-	width: $o-promobox-width;
-
-	#{$o-promobox-class-type}o-promobox__image {
-		padding: 0 0 14px;
-		margin: 0;
+@if $o-promobox-is-silent == false {
+	.o-promobox__title {
+		@include oPromoboxTitle;
 	}
-}
 
-#{$o-promobox-class-type}o-promobox {
-	&.o-promobox--skinny {
-		@include o-promobox--skinny;
+	.o-promobox__image {
+		@include oPromoboxImage;
+	}
+
+	.o-promobox {
+		@include oPromobox;
+	}
+
+	.o-promobox--skinny {
+		@include oPromobox($skinny: true);
 	}
 }

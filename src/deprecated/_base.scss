@@ -1,0 +1,26 @@
+
+/**
+ * Base styling
+ */
+
+#{$o-promobox-class-type}o-promobox__title {
+	@include oPromoboxTitle;
+}
+
+#{$o-promobox-class-type}o-promobox__image {
+	@include oPromoboxImage;
+}
+
+#{$o-promobox-class-type}o-promobox {
+	@include oPromobox;
+}
+
+
+
+/**
+ * Skinny mode
+ */
+
+#{$o-promobox-class-type}o-promobox--skinny {
+	@include oPromobox($skinny: true);
+}
