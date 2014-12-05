@@ -2,21 +2,26 @@
 	"options": {
 		"sass": "demos/src/demo.scss"
 	},
-	"demos": {
-		"base": {
-			"template": "demos/src/base.mustache"
+	"demos": [
+		{
+			"template": "demos/src/base.mustache",
+			"name": "base"
 		},
-		"skinny": {
-			"template": "demos/src/skinny.mustache"
+		{
+			"template": "demos/src/skinny.mustache",
+			"name": "skinny"
 		},
-		"standard": {
-			"template": "demos/src/standard.mustache"
+		{
+			"template": "demos/src/standard.mustache",
+			"name": "standard"
 		},
-		"standard-skinny": {
-			"template": "demos/src/standard-skinny.mustache"
+		{
+			"template": "demos/src/standard-skinny.mustache",
+			"name": "standard-skinny"
 		},
-		"custom-responsive": {
-			"template": "demos/src/custom-responsive.mustache"
+		{
+			"template": "demos/src/custom-responsive.mustache",
+			"name": "custom-responsive"
 		}
-	}
+	]
 }
