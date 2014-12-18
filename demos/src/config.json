@@ -20,8 +20,12 @@
 			"name": "standard-skinny"
 		},
 		{
-			"template": "demos/src/custom-responsive.mustache",
+			"template": "demos/src/custom-responsivity.mustache",
 			"name": "custom-responsive"
+		},
+		{
+			"template": "demos/src/entirely-custom.mustache",
+			"name": "entirely-custom"
 		}
 	]
 }
