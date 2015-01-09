@@ -20,7 +20,7 @@ Note: it is up to the product developer to decide how to 'flow' other content ar
 
 ## Themes
 
-### [Standard theme](http://build.origami.ft.com/files/o-promobox@1/demos/standard.html)
+### [Standard theme](http://build.origami.ft.com/files/o-promobox/demos/standard.html)
 
 ```html
 <div class="o-promobox o-promobox--standard">
