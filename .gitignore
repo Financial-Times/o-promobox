@@ -1,8 +1,7 @@
 /build
 /bower_components/
-/.sass-cache
+.sass-cache
 .ruby-version
-/demos/demo.css
-/demos/demo.css.map
+/demos/local
 /.idea
 .editorconfig

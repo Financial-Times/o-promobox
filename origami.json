@@ -29,6 +29,11 @@
             "path": "/demos/custom-responsive.html",
             "expanded": true,
             "description": ""
+        },
+        {
+            "path": "/demos/entirely-custom.html",
+            "expanded": true,
+            "description": ""
         }
     ]
 }

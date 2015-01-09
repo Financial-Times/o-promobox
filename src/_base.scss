@@ -1,16 +1,14 @@
-/**
- * @group o-promobox
- * @link http://registry.origami.ft.com/components/o-promobox
-**/
+////
+/// @group o-promobox
+/// @link http://registry.origami.ft.com/components/o-promobox
+////
 
-/**
- * Promobox container styling
- *
- * @param {boolean} $skinny (false) - force promobox to have a fixed, narrow width
- * @param {boolean} $skinny-width ($o-promobox-skinny-width) - with of the skinny promobox
- *
- * @requires {variable} $o-promobox-skinny-width
- */
+/// Promobox container styling
+///
+/// @param {boolean} $skinny (false) - force promobox to have a fixed, narrow width
+/// @param {boolean} $skinny-width ($o-promobox-skinny-width) - with of the skinny promobox
+///
+/// @requires {variable} $o-promobox-skinny-width
 @mixin oPromobox($skinny: false, $skinny-width: $o-promobox-skinny-width) {
 	padding-top: 14px;
 	overflow: hidden;
@@ -22,46 +20,54 @@
 
 	@if $skinny {
 		width: $skinny-width;
-
-		.o-promobox__image {
-			padding: 0 0 14px;
-			margin: 0;
-		}
 	} @else {
-		width: 100%;
+		width: auto;
 	}
 }
 
-/**
- * Promobox title structure
- */
+/// Promobox title structure
 @mixin oPromoboxTitle {
 	padding: 0 7px 14px;
 	margin: 0;
 }
 
-/**
- * Promobox image structure
- */
-@mixin oPromoboxImage {
-	float: left;
-	padding: 0 28px 14px 7px;
+/// Promobox image structure
+///
+/// @param {Boolean} $full-width (false) - occupy the entire available space or float the image?
+@mixin oPromoboxImage($full-width: false) {
+	max-width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 14px;
+
+	@if $full-width {
+		display: block;
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	} @else {
+		float: left;
+		padding-right: 28px; // 2x bottom spacing
+		padding-left: 7px; // 1/2 of bottom spacing
+	}
 }
 
 @if $o-promobox-is-silent == false {
+	.o-promobox {
+		@include oPromobox;
+	}
 	.o-promobox__title {
 		@include oPromoboxTitle;
 	}
-
 	.o-promobox__image {
 		@include oPromoboxImage;
 	}
 
-	.o-promobox {
-		@include oPromobox;
-	}
-
 	.o-promobox--skinny {
 		@include oPromobox($skinny: true);
+
+		.o-promobox__image {
+			@include oPromoboxImage($full-width: true);
+		}
 	}
 }

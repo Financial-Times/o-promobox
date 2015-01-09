@@ -11,45 +11,110 @@ Add the `o-promobox` class to the element you wish to apply the styling.  Typica
 ```html
 <div class="o-promobox">
 	<h3 class="o-promobox__title">My Promobox</h3>
-	<img src="//my-image.png" alt="" />
+	<img class="o-promobox__image" src="//my-image.png" alt="" />
 	<p>My paragraph</p>
 </div>
 ```
 
 Note: it is up to the product developer to decide how to 'flow' other content around the promobox.  They might choose to `float: left;` the promobox or `display: inline` it - or the product developer may decide to display it full width.
 
-## Themeable
+## Themes
 
-Either extend the base classes to create a custom theme or use the [standard theme](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard.html).
-
+### [Standard theme](http://build.origami.ft.com/files/o-promobox/demos/standard.html)
 
 ```html
 <div class="o-promobox o-promobox--standard">
-	…
+	<h3 class="o-promobox__title">My Promobox</h3>
+	<img class="o-promobox__image" src="//my-image.png" alt="" />
+	<p>My paragraph</p>
 </div>
 ```
 
-## Responsive
+### Your own theme
 
-The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
+You can create your own modifiers, for example: `.o-promobox--my-theme`.
 
-To [enable responsivity](http://build.origami.ft.com/files/o-promobox@0.0.7/demos/custom-responsive.html), follow the example below:-
+```html
+<div class="o-promobox o-promobox--my-theme">
+	<h3 class="o-promobox__title">My Promobox</h3>
+	<img class="o-promobox__image" src="//my-image.png" alt="" />
+	<p>My paragraph</p>
+</div>
+```
 
 ```scss
-@o-promobox-is-silent: false;
-@import "o-promobox";
+.o-promobox--my-theme {
+	font-family: oFontsGetFontFamilyWithFallbacks(MillerDisplay);
+	color: #ffffff;
+	background-color: oColorsGetPaletteColor(claret);
 
-@media (min-width: 300px) {
-	.custom-responsive-thing {
-		@include o-promobox--skinny;
+	.o-promobox__title {
+		font-size: 14px;
+		line-height: 18px;
+		border-bottom: 1px solid currentColor;
+	}
+	p {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 ```
 
+## Responsive
+
+The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox@1.2.0/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox@1.2.0/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
+
+To [enable responsivity](http://build.origami.ft.com/files/o-promobox@1.2.0/demos/custom-responsivity.html), follow the example below:-
+
+### On a specific element
+
 ```html
-<div class="o-promobox custom-responsive-thing">
+<div class="o-promobox o-promobox--custom-responsivity">
 	<h3 class="o-promobox__title">My Promobox</h3>
-	<img src="//my-image.png" alt="" />
+	<img class="o-promobox__image" src="//my-image.png" alt="" />
 	<p>My paragraph</p>
 </div>
+```
+
+```scss
+@o-promobox-is-silent: false;
+@import "o-promobox/main";
+
+@media (min-width: 300px) {
+	.o-promobox--custom-responsivity {
+		@include oPromobox($skinny: true);
+
+		.o-promobox__image {
+			@include oPromoboxImage($fullwidth: true);
+		}
+	}
+}
+```
+
+### Context-based
+
+```html
+<div class="my-sidebar">
+	<div class="o-promobox">
+		<h3 class="o-promobox__title">My Promobox</h3>
+		<img class="o-promobox__image" src="//my-image.png" alt="" />
+		<p>My paragraph</p>
+	</div>
+</div>
+```
+
+```scss
+@o-promobox-is-silent: false;
+@import "o-promobox/main";
+
+@media (min-width: 300px) {
+	.my-sidebar {
+		.o-promobox {
+			@include oPromobox($skinny: true);
+		}
+		.o-promobox__image {
+			@include oPromoboxImage($fullwidth: true);
+		}
+	}
+}
 ```
