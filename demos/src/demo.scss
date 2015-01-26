@@ -1,6 +1,10 @@
 $o-promobox-is-silent: false;
 @import "./../../main";
 
+body {
+	font-family: BentonSans, sans-serif;
+}
+
 @media (min-width: 500px) {
 	.o-promobox--custom-responsivity {
 		@include oPromobox($skinny: true);
