@@ -4,16 +4,12 @@
 ////
 
 /// Standard theme title
-///
-/// @requires {function} oColorsGetPaletteColor
 @mixin oPromoboxStandardTitle {
 	font-size: 16px;
 	line-height: 21px;
 }
 
 /// Standard theme
-///
-/// @requires {function} oColorsGetPaletteColor
 @mixin oPromoboxStandard {
 	border-top: 3px solid oColorsGetPaletteColor(pink-tint4);
 	background-color: oColorsGetPaletteColor(pink-tint2);
