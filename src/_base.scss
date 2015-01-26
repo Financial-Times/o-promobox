@@ -5,10 +5,8 @@
 
 /// Promobox container styling
 ///
-/// @param {boolean} $skinny (false) - force promobox to have a fixed, narrow width
-/// @param {boolean} $skinny-width ($o-promobox-skinny-width) - with of the skinny promobox
-///
-/// @requires {variable} $o-promobox-skinny-width
+/// @param {Bool} $skinny [false] - force promobox to have a fixed, narrow width
+/// @param {Bool} $skinny-width [$o-promobox-skinny-width] - with of the skinny promobox
 @mixin oPromobox($skinny: false, $skinny-width: $o-promobox-skinny-width) {
 	padding-top: 14px;
 	overflow: hidden;
@@ -33,7 +31,7 @@
 
 /// Promobox image structure
 ///
-/// @param {Boolean} $full-width (false) - occupy the entire available space or float the image?
+/// @param {Bool} $full-width [false] - occupy the entire available space or float the image?
 @mixin oPromoboxImage($full-width: false) {
 	max-width: 100%;
 	box-sizing: border-box;
