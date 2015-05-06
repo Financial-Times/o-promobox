@@ -2,17 +2,17 @@
     "description": "Styling for boxes that promote the contents of themselves",
     "origamiType": "module",
     "origamiVersion": 1,
-    "support": "matthew.andrews@ft.com",
-    "supportStatus": "experimental",
+    "support": "https://github.com/Financial-Times/o-promobox/issues",
+    "supportStatus": "active",
     "demos": [
         {
             "path": "/demos/base.html",
-            "expanded": true,
+            "expanded": false,
             "description": ""
         },
         {
             "path": "/demos/skinny.html",
-            "expanded": true,
+            "expanded": false,
             "description": ""
         },
         {
@@ -22,17 +22,17 @@
         },
         {
             "path": "/demos/standard-skinny.html",
-            "expanded": true,
+            "expanded": false,
             "description": ""
         },
         {
             "path": "/demos/custom-responsive.html",
-            "expanded": true,
+            "expanded": false,
             "description": ""
         },
         {
             "path": "/demos/entirely-custom.html",
-            "expanded": true,
+            "expanded": false,
             "description": ""
         }
     ]
