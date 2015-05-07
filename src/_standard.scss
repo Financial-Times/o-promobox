@@ -11,8 +11,8 @@
 
 /// Standard theme
 @mixin oPromoboxStandard {
-	border-top: 3px solid oColorsGetPaletteColor(pink-tint4);
-	background-color: oColorsGetPaletteColor(pink-tint2);
+	border-top: 3px solid oColorsGetPaletteColor('pink-tint4');
+	background-color: oColorsGetPaletteColor('pink-tint2');
 
 	> p {
 		font-size: 14px;
