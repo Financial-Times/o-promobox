@@ -78,7 +78,7 @@ To [enable responsivity](http://build.origami.ft.com/files/o-promobox/demos/cust
 
 ```scss
 @o-promobox-is-silent: false;
-@import "o-promobox/main";
+@import 'o-promobox/main';
 
 @media (min-width: 300px) {
 	.o-promobox--custom-responsivity {
@@ -105,7 +105,7 @@ To [enable responsivity](http://build.origami.ft.com/files/o-promobox/demos/cust
 
 ```scss
 @o-promobox-is-silent: false;
-@import "o-promobox/main";
+@import 'o-promobox/main';
 
 @media (min-width: 300px) {
 	.my-sidebar {
@@ -118,3 +118,11 @@ To [enable responsivity](http://build.origami.ft.com/files/o-promobox/demos/cust
 	}
 }
 ```
+
+----
+
+## License
+
+Copyright (c) 2015 Financial Times Ltd. All rights reserved.
+
+This software is published under the [MIT licence](http://opensource.org/licenses/MIT).
