@@ -20,7 +20,7 @@ Note: it is up to the product developer to decide how to 'flow' other content ar
 
 ## Themes
 
-### [Standard theme](http://build.origami.ft.com/files/o-promobox/demos/standard.html)
+### [Standard theme](http://build.origami.ft.com/v2/files/o-promobox/demos/standard.html)
 
 ```html
 <div class="o-promobox o-promobox--standard">
@@ -62,9 +62,9 @@ You can create your own modifiers, for example: `.o-promobox--my-theme`.
 
 ## Responsive
 
-The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/files/o-promobox/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/files/o-promobox/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
+The module comes in two layouts.  The default, [full-width layout](http://build.origami.ft.com/v2/files/o-promobox/demos/standard.html), recommended for smaller screens, and [a thinner 'skinny' layout](http://build.origami.ft.com/v2/files/o-promobox/demos/standard-skinny.html) currently fixed to 167 pixels (for legacy reasons).
 
-To [enable responsivity](http://build.origami.ft.com/files/o-promobox/demos/custom-responsivity.html), follow the example below:-
+To [enable responsivity](http://build.origami.ft.com/v2/files/o-promobox/demos/custom-responsivity.html), follow the example below:-
 
 ### On a specific element
 
