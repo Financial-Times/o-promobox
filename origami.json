@@ -5,7 +5,7 @@
     "support": "https://github.com/Financial-Times/o-promobox/issues",
     "supportStatus": "active",
     "ci": {
-      "circle": "https://api.travis-ci.org/repos/Financial-Times/o-overlay/builds.json"
+      "circle": "https://api.travis-ci.org/repos/Financial-Times/o-promobox/builds.json"
     },
     "options": {
   		"sass": "demos/src/demo.scss",
