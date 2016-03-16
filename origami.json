@@ -4,36 +4,49 @@
     "origamiVersion": 1,
     "support": "https://github.com/Financial-Times/o-promobox/issues",
     "supportStatus": "active",
+    "ci": {
+      "circle": "https://api.travis-ci.org/repos/Financial-Times/o-overlay/builds.json"
+    },
+    "options": {
+  		"sass": "demos/src/demo.scss",
+  		"dependencies": ["o-fonts@^1.5.0"]
+  	},
     "demos": [
         {
-            "path": "/demos/base.html",
-            "expanded": false,
-            "description": ""
+          "name": "base",
+          "template": "/demos/src/base.mustache",
+          "expanded": false,
+          "description": ""
         },
         {
-            "path": "/demos/skinny.html",
-            "expanded": false,
-            "description": ""
+          "name": "skinny",
+          "template": "/demos/src/skinny.mustache",
+          "expanded": false,
+          "description": ""
         },
         {
-            "path": "/demos/standard.html",
-            "expanded": true,
-            "description": ""
+          "name": "standard",
+          "template": "/demos/src/standard.mustache",
+          "expanded": true,
+          "description": ""
         },
         {
-            "path": "/demos/standard-skinny.html",
-            "expanded": false,
-            "description": ""
+          "name": "standard-skinny",
+          "template": "/demos/src/standard-skinny.mustache",
+          "expanded": false,
+          "description": ""
         },
         {
-            "path": "/demos/custom-responsive.html",
-            "expanded": false,
-            "description": ""
+          "name": "custom-responsive",
+          "template": "/demos/src/custom-responsive.mustache",
+          "expanded": false,
+          "description": ""
         },
         {
-            "path": "/demos/entirely-custom.html",
-            "expanded": false,
-            "description": ""
+          "name": "entirely-custom",
+          "template": "/demos/src/entirely-custom.mustache",
+          "expanded": false,
+          "description": ""
         }
     ]
 }
