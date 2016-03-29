@@ -1,4 +1,4 @@
-# o-promobox [![Build Status](https://travis-ci.org/Financial-Times/o-promobox.png?branch=master)](https://travis-ci.org/Financial-Times/o-promobox)
+# o-promobox [![Build Status](https://circleci.com/gh/Financial-Times/o-promobox.png?style=shield&circle-token=9303143d394812726e632cae33c93b9d7840edff)](https://circleci.com/gh/Financial-Times/o-promobox)
 
 ___
 Styling for promoboxes
