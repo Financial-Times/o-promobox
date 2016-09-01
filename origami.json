@@ -16,37 +16,21 @@
 		{
 			"name": "base",
 			"template": "demos/src/base.mustache",
-			"expanded": false,
 			"description": ""
 		},
 		{
 			"name": "skinny",
 			"template": "demos/src/skinny.mustache",
-			"expanded": false,
 			"description": ""
 		},
 		{
 			"name": "standard",
 			"template": "demos/src/standard.mustache",
-			"expanded": true,
 			"description": ""
 		},
 		{
 			"name": "standard-skinny",
 			"template": "demos/src/standard-skinny.mustache",
-			"expanded": false,
-			"description": ""
-		},
-		{
-			"name": "custom-responsive",
-			"template": "demos/src/custom-responsive.mustache",
-			"expanded": false,
-			"description": ""
-		},
-		{
-			"name": "entirely-custom",
-			"template": "demos/src/entirely-custom.mustache",
-			"expanded": false,
 			"description": ""
 		}
 	]
