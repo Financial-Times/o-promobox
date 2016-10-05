@@ -1,5 +1,7 @@
 # o-promobox [![Build Status](https://circleci.com/gh/Financial-Times/o-promobox.png?style=shield&circle-token=9303143d394812726e632cae33c93b9d7840edff)](https://circleci.com/gh/Financial-Times/o-promobox)
 
+**This module has been deprecated**
+
 ___
 Styling for promoboxes
 ___
